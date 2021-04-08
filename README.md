@@ -10,3 +10,5 @@ Most important things to remember are;
 3. bind your esp8266 to your MT by copying the script code that can be found in the setting page of the vendo machine,
 4. do the rest of the script,
 5. follow the same schematics from the previous version just without the LCD.
+Original hotspot html of mikrotik were used exept only for the login html. You need to copy *.jpg files in the /img folder.
+Before copying the html file, open it with your favorite html editor, replace the ip address according to your esp8266 address in your network setup
