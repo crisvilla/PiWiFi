@@ -207,12 +207,12 @@ function insertCoin(){
 	document.getElementById("user").disabled = true;
 	document.getElementById("pass").disabled = true;
 	document.getElementById("okBtn").disabled = true;
-	document.getElementById("myframe").src = "http://10.0.10.5/sendToken?MAC=$(mac)";
+	document.getElementById("myframe").src = "http://10.0.0.5/sendToken?MAC=$(mac)";
 	modal.style.display = "block";
 }
 function endsession(){
 	
-	document.getElementById("myframe").src = "http://10.0.10.5/endService?MAC=$(mac)";
+	document.getElementById("myframe").src = "http://10.0.0.5/endService?MAC=$(mac)";
 	document.getElementById("okBtn").disabled = false;
 	modal.style.display = "none";
 	document.login.username.value = document.login.macName.value;
