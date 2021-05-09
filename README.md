@@ -1,4 +1,6 @@
 # PiWiFi
+PiWiFi 101 - Second bonus open, EEPROM reset was rectified, don't forget to create MT hotspot profile "vendo".
+
 Semi auto wifi vendo using esp8266
 An upgrade version of the previous code which has removed LCD display and the button was used as a hard reset button.
 Reset button must be pressed for 3 seconds during starting up the esp in order to reset it to default values.
