@@ -1,4 +1,6 @@
 # PiWiFi
+PiWiFi 102 - trying to get rid of the EEPROM reset during startup.
+
 PiWiFi 101 - Second bonus open, EEPROM reset was rectified, don't forget to create MT hotspot profile "vendo".
 
 Semi auto wifi vendo using esp8266
