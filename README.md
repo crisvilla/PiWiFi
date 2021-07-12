@@ -10,7 +10,16 @@ Most important things to remember are;
 1. set your ip address,
 2. ip address whould not be within the address pool of your mikrotik hotspot,
 3. bind your esp8266 to your MT by copying the script code that can be found in the setting page of the vendo machine,
-4. do the rest of the script,
-5. follow the same schematics from the previous version just without the LCD.
+4. open mikrotik terminal and paste:"/ip hotspot ip-binding add type=bypassed mac-address=(esp8266 MAC address)"
+5. do the same: "/ip firewall filter add action=accept chain=input place-before=0 src-address=(esp8266 ip address)"
+6. do the same: "/ip hotspot walled-garden ip add action=accept disabled=no dst-address=(esp8266 ip address)"
+7. follow the same schematics from the previous version just without the LCD.
+8. Create in mikrotik hotspot user profile = "vendo" and add the in script tab;
+9. On login and On logout: 
+    #removing user from hotspot
+    :local x
+    :foreach expired in [/ip hotspot user find profile="vendo"] do={
+    :if ([/ip hotspot user get $expired uptime]>=[/ip hotspot user get $expired limit-uptime]) do={/ip hotspot user remove $expired}
+    }
 Original hotspot html of mikrotik were used exept only for the login html. You need to copy *.jpg files in the /img folder.
 Before copying the html file, open it with your favorite html editor, replace the ip address according to your esp8266 address in your network setup
