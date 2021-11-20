@@ -5,6 +5,15 @@ PiWiFi 102 - trying to get rid of the EEPROM reset during startup.
 
 PiWiFi 101 - Second bonus open, EEPROM reset was rectified, don't forget to create MT hotspot profile "vendo".
 
+// ESP8266 pinout
+/*
+ * ESP8266 wifi code generator
+ * D0 led blinker
+ * D2 relay output(future)
+ * D4 coin slot enable/disable
+ * D5 coin slot signal(pull up)
+ * D6 reset button(pull up)
+ */
 Semi auto wifi vendo using esp8266
 An upgrade version of the previous code which has removed LCD display and the button was used as a hard reset button.
 Reset button must be pressed for 3 seconds during starting up the esp in order to reset it to default values.
