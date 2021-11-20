@@ -1,4 +1,6 @@
 # PiWiFi
+PiWiFi 103 - just set defaul button in flasher and upload the bin file.
+
 PiWiFi 102 - trying to get rid of the EEPROM reset during startup.
 
 PiWiFi 101 - Second bonus open, EEPROM reset was rectified, don't forget to create MT hotspot profile "vendo".
